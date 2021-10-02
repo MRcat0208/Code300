@@ -34,7 +34,6 @@ public class SaoKe {
             fileName.add(fileName1);
             fileName.add(fileName2);
             int fileCount = 1;
-            List<List<String>> allRows = new ArrayList<>();
             for (String file : fileName) {
                 try (CSVReader reader = new CSVReader(new FileReader(file))) {
                     List<String[]> r = reader.readAll();
@@ -49,7 +48,6 @@ public class SaoKe {
                         cashOut[i] = temp[1];
                         note[i] = temp[2].replaceAll(",", "");
                     }
-
                     long[] sumCashIn = new long[note.length];
                     long[] sumCashOut = new long[note.length];
                     String[] isNoted = new String[note.length];
@@ -74,6 +72,7 @@ public class SaoKe {
                         System.out.println(tempString);
                     }
                     fileCount++;
+                    System.out.print("***---------------------------------------------------------------***" + "\n" );
                 }
             }
             csvWriter.flush();
