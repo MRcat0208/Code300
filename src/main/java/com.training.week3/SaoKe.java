@@ -25,10 +25,6 @@ public class SaoKe {
     public static void main(String[] args) throws IOException, CsvException {
         try {
             OutputStreamWriter csvWriter = new OutputStreamWriter(new FileOutputStream("finalSaoKe.csv"), StandardCharsets.UTF_8);
-
-
-            //FileWriter csvWriter = new FileWriter("finalSaoKe.csv");
-
             csvWriter.append("Note");
             csvWriter.append(",");
             csvWriter.append("CashIn");
@@ -116,12 +112,6 @@ public class SaoKe {
                     }
                     fileCount++;
                 }
-
-//            System.out.println("Total CashIn " + "\t\t\t\t" + "Total CashOut" + "\t\t\t\t\t" + " Note");
-//            for (int i = 0; i < lastIndex; i++) {
-//
-//                System.out.println(sumCashIn[i] + " \t\t\t\t\t\t " + sumCashOut[i] + " \t\t\t\t\t\t\t" + isNoted[i]);
-//            }
             }
             csvWriter.flush();
             csvWriter.close();

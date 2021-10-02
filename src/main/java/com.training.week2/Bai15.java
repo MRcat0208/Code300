@@ -18,7 +18,7 @@ public class Bai15 {
                 }
             }
                 if (count > 1 && ch[i] !='0') {
-                    System.out.println("char:" + ch[i] + " was duplicate " + count + " times.");
+                    System.out.println("char: " + ch[i] + " was duplicate " + count + " times.");
                 }
         }
     }
