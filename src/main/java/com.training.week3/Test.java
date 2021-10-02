@@ -1,7 +1,7 @@
 package com.training.week3;
+
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Test {
@@ -19,7 +19,7 @@ public class Test {
                 {
                     for(int i = 0; i < collum[2].length(); i++)
                     {
-                        if()
+                        String a;
                     }
                 }
             }
